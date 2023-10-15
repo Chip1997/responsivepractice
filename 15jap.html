@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Título de la página</title>
+    <style>
+        /* Estilo personalizado para las casillas con fondo gris */
+        .gray-box {
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar scroll</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Options</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#opcion1">Option 1</a></li>
+                            <li><a class="dropdown-item" href="#opcion2">Option 2</a></li>
+                            <li><a class="dropdown-item" href="#opcion3">Option 3</a></li>
+                            <li><a class="dropdown-item" href="#opcion4">Option 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Link</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Título -->
+    <h1 class="text-center">Título de la página</h1>
+
+    <!-- Carrusel de imágenes -->
+   <div class="d-none d-lg-block">
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+                <p class="text-center">Esto es una imagen del carrusel</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <p class="text-center">Otra imagen del carrusel</p>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+                <p class="text-center">Una tercera imagen del carrusel</p>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+    <!-- Botones a la izquierda con Bootstrap Grid System -->
+    <div id="buttons-section" class="container text-center mt-5">
+        <div class="row">
+            <div class="col-12 col-lg-3">
+                <a id="opcion1" class="btn btn-primary btn-block mb-3" href="#">Opción 1</a>
+            </div>
+            <div class="col-12 col-lg-3">
+                <a id="opcion2" class="btn btn-primary btn-block mb-3" href="#">Opción 2</a>
+            </div>
+            <div class="col-12 col-lg-3">
+                <a id="opcion3" class="btn btn-primary btn-block mb-3" href="#">Opción 3</a>
+            </div>
+            <div class="col-12 col-lg-3">
+                <a id="opcion4" class="btn btn-primary btn-block mb-3" href="#">Opción 4</a>
+            </div>
+        </div>
+    </div>   
+        <!-- Columna para las tarjetas -->
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Texto de relleno Lorem Ipsum</p>
+                        <small class="text-muted float-right">Texto a la derecha</small>
+                    </div>
+                </div>
+            </div>
+            <!-- Repite esta estructura para las demás tarjetas -->
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Texto de relleno Lorem Ipsum</p>
+                        <small class="text-muted float-right">Texto a la derecha</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">Texto de relleno Lorem Ipsum</p>
+                        <small class="text-muted float-right">Texto a la derecha</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <script src="funcionalidades.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
